@@ -10,6 +10,7 @@
 #import "Batiment.h"
 #import "Maison.h"
 #import "Immeuble.h"
+#import "ParcImmobilier.h"
 
 @implementation AppDelegate
 
@@ -21,13 +22,21 @@
     NSLog(@"%@",details);
     
     Maison* home = [[Maison alloc] initWithNom:@"Maison Lille" AndPossedeJardin:YES AndAdresseWithNumero:81 AndRue:@"rue d'Athènes" AndCodePostal:59000 AndVille:@"Lille"];
-    details = [home afficherDetails];
-    NSLog(@"%@",details);
-    
     Immeuble* hlm = [[Immeuble alloc] initWithNom:@"Océane" AndNbEtage:15 AndAdresseWithNumero:201 AndRue:@"avenue du Général De Gaulle" AndCodePostal:59000 AndVille:@"Lille"];
-    details = [hlm afficherDetails];
-    NSLog(@"%@",details);
     
+    ParcImmobilier* parc = [ParcImmobilier new];
+    [parc ajoutImmeuble:hlm];
+    [parc ajoutMaison:home];
+    
+    for(Maison* m in parc.maisons){
+        details = [m afficherDetails];
+        NSLog(@"%@",details);
+    }
+    
+    for(Immeuble* imm in parc.immeubles){
+        details = [imm afficherDetails];
+        NSLog(@"%@",details);
+    }
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

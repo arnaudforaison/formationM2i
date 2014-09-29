@@ -23,6 +23,7 @@
 		841B47D919D981F000A72CF2 /* Adresse.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47D819D981F000A72CF2 /* Adresse.m */; };
 		841B47DD19D9958B00A72CF2 /* Maison.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47DC19D9958B00A72CF2 /* Maison.m */; };
 		841B47E019D9996F00A72CF2 /* Immeuble.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47DF19D9996F00A72CF2 /* Immeuble.m */; };
+		841B47E319D9A8D300A72CF2 /* ParcImmobilier.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47E219D9A8D300A72CF2 /* ParcImmobilier.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		841B47DC19D9958B00A72CF2 /* Maison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maison.m; sourceTree = "<group>"; };
 		841B47DE19D9996F00A72CF2 /* Immeuble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Immeuble.h; sourceTree = "<group>"; };
 		841B47DF19D9996F00A72CF2 /* Immeuble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Immeuble.m; sourceTree = "<group>"; };
+		841B47E119D9A8D300A72CF2 /* ParcImmobilier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParcImmobilier.h; sourceTree = "<group>"; };
+		841B47E219D9A8D300A72CF2 /* ParcImmobilier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParcImmobilier.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,8 @@
 				841B47DC19D9958B00A72CF2 /* Maison.m */,
 				841B47DE19D9996F00A72CF2 /* Immeuble.h */,
 				841B47DF19D9996F00A72CF2 /* Immeuble.m */,
+				841B47E119D9A8D300A72CF2 /* ParcImmobilier.h */,
+				841B47E219D9A8D300A72CF2 /* ParcImmobilier.m */,
 			);
 			name = bean;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				841B47D619D9691000A72CF2 /* Batiment.m in Sources */,
 				841B47B619D94B9F00A72CF2 /* AppDelegate.m in Sources */,
 				841B47DD19D9958B00A72CF2 /* Maison.m in Sources */,
+				841B47E319D9A8D300A72CF2 /* ParcImmobilier.m in Sources */,
 				841B47E019D9996F00A72CF2 /* Immeuble.m in Sources */,
 				841B47B219D94B9F00A72CF2 /* main.m in Sources */,
 				841B47D919D981F000A72CF2 /* Adresse.m in Sources */,
