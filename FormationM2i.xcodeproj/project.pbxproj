@@ -21,6 +21,8 @@
 		841B47CB19D94B9F00A72CF2 /* FormationM2iTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47CA19D94B9F00A72CF2 /* FormationM2iTests.m */; };
 		841B47D619D9691000A72CF2 /* Batiment.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47D519D9691000A72CF2 /* Batiment.m */; };
 		841B47D919D981F000A72CF2 /* Adresse.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47D819D981F000A72CF2 /* Adresse.m */; };
+		841B47DD19D9958B00A72CF2 /* Maison.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47DC19D9958B00A72CF2 /* Maison.m */; };
+		841B47E019D9996F00A72CF2 /* Immeuble.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47DF19D9996F00A72CF2 /* Immeuble.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		841B47D519D9691000A72CF2 /* Batiment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Batiment.m; sourceTree = "<group>"; };
 		841B47D719D981F000A72CF2 /* Adresse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adresse.h; sourceTree = "<group>"; };
 		841B47D819D981F000A72CF2 /* Adresse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adresse.m; sourceTree = "<group>"; };
+		841B47DB19D9958B00A72CF2 /* Maison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maison.h; sourceTree = "<group>"; };
+		841B47DC19D9958B00A72CF2 /* Maison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maison.m; sourceTree = "<group>"; };
+		841B47DE19D9996F00A72CF2 /* Immeuble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Immeuble.h; sourceTree = "<group>"; };
+		841B47DF19D9996F00A72CF2 /* Immeuble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Immeuble.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +123,7 @@
 				841B47B519D94B9F00A72CF2 /* AppDelegate.m */,
 				841B47B719D94B9F00A72CF2 /* Images.xcassets */,
 				841B47AC19D94B9F00A72CF2 /* Supporting Files */,
-				841B47D419D9691000A72CF2 /* Batiment.h */,
-				841B47D519D9691000A72CF2 /* Batiment.m */,
-				841B47D719D981F000A72CF2 /* Adresse.h */,
-				841B47D819D981F000A72CF2 /* Adresse.m */,
+				841B47DA19D9952B00A72CF2 /* bean */,
 			);
 			path = FormationM2i;
 			sourceTree = "<group>";
@@ -152,6 +155,21 @@
 				841B47C719D94B9F00A72CF2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		841B47DA19D9952B00A72CF2 /* bean */ = {
+			isa = PBXGroup;
+			children = (
+				841B47D419D9691000A72CF2 /* Batiment.h */,
+				841B47D519D9691000A72CF2 /* Batiment.m */,
+				841B47D719D981F000A72CF2 /* Adresse.h */,
+				841B47D819D981F000A72CF2 /* Adresse.m */,
+				841B47DB19D9958B00A72CF2 /* Maison.h */,
+				841B47DC19D9958B00A72CF2 /* Maison.m */,
+				841B47DE19D9996F00A72CF2 /* Immeuble.h */,
+				841B47DF19D9996F00A72CF2 /* Immeuble.m */,
+			);
+			name = bean;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +269,8 @@
 			files = (
 				841B47D619D9691000A72CF2 /* Batiment.m in Sources */,
 				841B47B619D94B9F00A72CF2 /* AppDelegate.m in Sources */,
+				841B47DD19D9958B00A72CF2 /* Maison.m in Sources */,
+				841B47E019D9996F00A72CF2 /* Immeuble.m in Sources */,
 				841B47B219D94B9F00A72CF2 /* main.m in Sources */,
 				841B47D919D981F000A72CF2 /* Adresse.m in Sources */,
 			);
@@ -451,6 +471,7 @@
 				841B47D019D94B9F00A72CF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		841B47D119D94B9F00A72CF2 /* Build configuration list for PBXNativeTarget "FormationM2iTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +480,7 @@
 				841B47D319D94B9F00A72CF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

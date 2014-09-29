@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "Batiment.h"
+#import "Maison.h"
+#import "Immeuble.h"
 
 @implementation AppDelegate
 
@@ -16,6 +18,14 @@
     Batiment* batiment = [[Batiment alloc] initWithNom:@"M2i" AndNombreMur:15];
     [batiment changeAdresseWithNumero:81 etRue:@"rue d'Athènes" etCodePostal:59000 etVille:@"Lille"];
     NSString* details = [batiment afficherDetails];
+    NSLog(@"%@",details);
+    
+    Maison* home = [[Maison alloc] initWithNom:@"Maison Lille" AndPossedeJardin:YES AndAdresseWithNumero:81 AndRue:@"rue d'Athènes" AndCodePostal:59000 AndVille:@"Lille"];
+    details = [home afficherDetails];
+    NSLog(@"%@",details);
+    
+    Immeuble* hlm = [[Immeuble alloc] initWithNom:@"Océane" AndNbEtage:15 AndAdresseWithNumero:201 AndRue:@"avenue du Général De Gaulle" AndCodePostal:59000 AndVille:@"Lille"];
+    details = [hlm afficherDetails];
     NSLog(@"%@",details);
     
     
