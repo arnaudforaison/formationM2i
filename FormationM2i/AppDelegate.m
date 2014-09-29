@@ -7,11 +7,18 @@
 //
 
 #import "AppDelegate.h"
+#import "Batiment.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    Batiment* batiment = [[Batiment alloc] initWithNom:@"M2i" AndNombreMur:15];
+    [batiment changeAdresseWithNumero:81 etRue:@"rue d'Athènes" etCodePostal:59000 etVille:@"Lille"];
+    NSString* details = [batiment afficherDetails];
+    NSLog(@"%@",details);
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];

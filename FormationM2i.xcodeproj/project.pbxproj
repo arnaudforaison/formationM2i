@@ -19,6 +19,8 @@
 		841B47C119D94B9F00A72CF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B47A919D94B9F00A72CF2 /* UIKit.framework */; };
 		841B47C919D94B9F00A72CF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841B47C719D94B9F00A72CF2 /* InfoPlist.strings */; };
 		841B47CB19D94B9F00A72CF2 /* FormationM2iTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47CA19D94B9F00A72CF2 /* FormationM2iTests.m */; };
+		841B47D619D9691000A72CF2 /* Batiment.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47D519D9691000A72CF2 /* Batiment.m */; };
+		841B47D919D981F000A72CF2 /* Adresse.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47D819D981F000A72CF2 /* Adresse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		841B47C619D94B9F00A72CF2 /* FormationM2iTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FormationM2iTests-Info.plist"; sourceTree = "<group>"; };
 		841B47C819D94B9F00A72CF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		841B47CA19D94B9F00A72CF2 /* FormationM2iTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormationM2iTests.m; sourceTree = "<group>"; };
+		841B47D419D9691000A72CF2 /* Batiment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Batiment.h; sourceTree = "<group>"; };
+		841B47D519D9691000A72CF2 /* Batiment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Batiment.m; sourceTree = "<group>"; };
+		841B47D719D981F000A72CF2 /* Adresse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adresse.h; sourceTree = "<group>"; };
+		841B47D819D981F000A72CF2 /* Adresse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adresse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,10 @@
 				841B47B519D94B9F00A72CF2 /* AppDelegate.m */,
 				841B47B719D94B9F00A72CF2 /* Images.xcassets */,
 				841B47AC19D94B9F00A72CF2 /* Supporting Files */,
+				841B47D419D9691000A72CF2 /* Batiment.h */,
+				841B47D519D9691000A72CF2 /* Batiment.m */,
+				841B47D719D981F000A72CF2 /* Adresse.h */,
+				841B47D819D981F000A72CF2 /* Adresse.m */,
 			);
 			path = FormationM2i;
 			sourceTree = "<group>";
@@ -239,8 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841B47D619D9691000A72CF2 /* Batiment.m in Sources */,
 				841B47B619D94B9F00A72CF2 /* AppDelegate.m in Sources */,
 				841B47B219D94B9F00A72CF2 /* main.m in Sources */,
+				841B47D919D981F000A72CF2 /* Adresse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
