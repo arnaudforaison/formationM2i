@@ -12,9 +12,9 @@
 
 int main(int argc, char * argv[])
 {
-//    @autoreleasepool {
-//        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-//    }
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
     
     int nombreA = 1;
     int nombreB = 3;
