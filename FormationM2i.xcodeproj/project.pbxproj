@@ -13,7 +13,6 @@
 		841B47B019D94B9F00A72CF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841B47AE19D94B9F00A72CF2 /* InfoPlist.strings */; };
 		841B47B219D94B9F00A72CF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47B119D94B9F00A72CF2 /* main.m */; };
 		841B47B619D94B9F00A72CF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47B519D94B9F00A72CF2 /* AppDelegate.m */; };
-		841B47B819D94B9F00A72CF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841B47B719D94B9F00A72CF2 /* Images.xcassets */; };
 		841B47BF19D94B9F00A72CF2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B47BE19D94B9F00A72CF2 /* XCTest.framework */; };
 		841B47C019D94B9F00A72CF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B47A519D94B9F00A72CF2 /* Foundation.framework */; };
 		841B47C119D94B9F00A72CF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B47A919D94B9F00A72CF2 /* UIKit.framework */; };
@@ -24,6 +23,21 @@
 		841B47DD19D9958B00A72CF2 /* Maison.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47DC19D9958B00A72CF2 /* Maison.m */; };
 		841B47E019D9996F00A72CF2 /* Immeuble.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47DF19D9996F00A72CF2 /* Immeuble.m */; };
 		841B47E319D9A8D300A72CF2 /* ParcImmobilier.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47E219D9A8D300A72CF2 /* ParcImmobilier.m */; };
+		841B47E719DA901400A72CF2 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47E619DA901400A72CF2 /* People.m */; };
+		841B47EA19DA912B00A72CF2 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47E919DA912B00A72CF2 /* Place.m */; };
+		841B47ED19DA960E00A72CF2 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47EC19DA960E00A72CF2 /* Player.m */; };
+		841B47F019DA9A1200A72CF2 /* Coach.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47EF19DA9A1200A72CF2 /* Coach.m */; };
+		841B47F319DA9CCE00A72CF2 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47F219DA9CCE00A72CF2 /* Team.m */; };
+		841B47FE19DAB9F200A72CF2 /* ListPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B47FC19DAB9F200A72CF2 /* ListPlayerViewController.m */; };
+		841B480519DABBBB00A72CF2 /* ListCoachViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B480319DABBBB00A72CF2 /* ListCoachViewController.m */; };
+		841B480619DABBBB00A72CF2 /* ListCoachViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841B480419DABBBB00A72CF2 /* ListCoachViewController.xib */; };
+		841B480A19DABCF000A72CF2 /* DetailPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B480819DABCF000A72CF2 /* DetailPlayerViewController.m */; };
+		84D98A2419DC371F00B44B88 /* FilterPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D98A2219DC371F00B44B88 /* FilterPlayerViewController.m */; };
+		84D98A2519DC371F00B44B88 /* FilterPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D98A2319DC371F00B44B88 /* FilterPlayerViewController.xib */; };
+		84D98A2719DD3FA400B44B88 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D98A2619DD3FA400B44B88 /* MainStoryboard.storyboard */; };
+		84D98AB419DD76EC00B44B88 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D98AB319DD76EC00B44B88 /* CoreData.framework */; };
+		84DF2D9819DAE54800F5BD92 /* ListTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DF2D9619DAE54800F5BD92 /* ListTeamViewController.m */; };
+		84DF2D9B19DBFF6300F5BD92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DF2D9A19DBFF6300F5BD92 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +61,6 @@
 		841B47B319D94B9F00A72CF2 /* FormationM2i-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FormationM2i-Prefix.pch"; sourceTree = "<group>"; };
 		841B47B419D94B9F00A72CF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		841B47B519D94B9F00A72CF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		841B47B719D94B9F00A72CF2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		841B47BD19D94B9F00A72CF2 /* FormationM2iTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormationM2iTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841B47BE19D94B9F00A72CF2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		841B47C619D94B9F00A72CF2 /* FormationM2iTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FormationM2iTests-Info.plist"; sourceTree = "<group>"; };
@@ -63,6 +76,31 @@
 		841B47DF19D9996F00A72CF2 /* Immeuble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Immeuble.m; sourceTree = "<group>"; };
 		841B47E119D9A8D300A72CF2 /* ParcImmobilier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParcImmobilier.h; sourceTree = "<group>"; };
 		841B47E219D9A8D300A72CF2 /* ParcImmobilier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParcImmobilier.m; sourceTree = "<group>"; };
+		841B47E519DA901400A72CF2 /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		841B47E619DA901400A72CF2 /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		841B47E819DA912B00A72CF2 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		841B47E919DA912B00A72CF2 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		841B47EB19DA960E00A72CF2 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		841B47EC19DA960E00A72CF2 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		841B47EE19DA9A1200A72CF2 /* Coach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coach.h; sourceTree = "<group>"; };
+		841B47EF19DA9A1200A72CF2 /* Coach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coach.m; sourceTree = "<group>"; };
+		841B47F119DA9CCE00A72CF2 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		841B47F219DA9CCE00A72CF2 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
+		841B47FB19DAB9F200A72CF2 /* ListPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPlayerViewController.h; sourceTree = "<group>"; };
+		841B47FC19DAB9F200A72CF2 /* ListPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPlayerViewController.m; sourceTree = "<group>"; };
+		841B480219DABBBB00A72CF2 /* ListCoachViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCoachViewController.h; sourceTree = "<group>"; };
+		841B480319DABBBB00A72CF2 /* ListCoachViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCoachViewController.m; sourceTree = "<group>"; };
+		841B480419DABBBB00A72CF2 /* ListCoachViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCoachViewController.xib; sourceTree = "<group>"; };
+		841B480719DABCF000A72CF2 /* DetailPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPlayerViewController.h; sourceTree = "<group>"; };
+		841B480819DABCF000A72CF2 /* DetailPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPlayerViewController.m; sourceTree = "<group>"; };
+		84D98A2119DC371F00B44B88 /* FilterPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterPlayerViewController.h; sourceTree = "<group>"; };
+		84D98A2219DC371F00B44B88 /* FilterPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterPlayerViewController.m; sourceTree = "<group>"; };
+		84D98A2319DC371F00B44B88 /* FilterPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterPlayerViewController.xib; sourceTree = "<group>"; };
+		84D98A2619DD3FA400B44B88 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		84D98AB319DD76EC00B44B88 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		84DF2D9519DAE54800F5BD92 /* ListTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListTeamViewController.h; path = controller/ListTeamViewController.h; sourceTree = "<group>"; };
+		84DF2D9619DAE54800F5BD92 /* ListTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListTeamViewController.m; path = controller/ListTeamViewController.m; sourceTree = "<group>"; };
+		84DF2D9A19DBFF6300F5BD92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D98AB419DD76EC00B44B88 /* CoreData.framework in Frameworks */,
 				841B47A819D94B9F00A72CF2 /* CoreGraphics.framework in Frameworks */,
 				841B47AA19D94B9F00A72CF2 /* UIKit.framework in Frameworks */,
 				841B47A619D94B9F00A72CF2 /* Foundation.framework in Frameworks */,
@@ -111,6 +150,7 @@
 		841B47A419D94B9F00A72CF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84D98AB319DD76EC00B44B88 /* CoreData.framework */,
 				841B47A519D94B9F00A72CF2 /* Foundation.framework */,
 				841B47A719D94B9F00A72CF2 /* CoreGraphics.framework */,
 				841B47A919D94B9F00A72CF2 /* UIKit.framework */,
@@ -122,9 +162,11 @@
 		841B47AB19D94B9F00A72CF2 /* FormationM2i */ = {
 			isa = PBXGroup;
 			children = (
+				84D98A2619DD3FA400B44B88 /* MainStoryboard.storyboard */,
+				84DF2D9A19DBFF6300F5BD92 /* Images.xcassets */,
+				841B47E419DA8FE700A72CF2 /* nfl */,
 				841B47B419D94B9F00A72CF2 /* AppDelegate.h */,
 				841B47B519D94B9F00A72CF2 /* AppDelegate.m */,
-				841B47B719D94B9F00A72CF2 /* Images.xcassets */,
 				841B47AC19D94B9F00A72CF2 /* Supporting Files */,
 				841B47DA19D9952B00A72CF2 /* bean */,
 			);
@@ -175,6 +217,67 @@
 				841B47E219D9A8D300A72CF2 /* ParcImmobilier.m */,
 			);
 			name = bean;
+			sourceTree = "<group>";
+		};
+		841B47E419DA8FE700A72CF2 /* nfl */ = {
+			isa = PBXGroup;
+			children = (
+				841B47FA19DAB35800A72CF2 /* bean */,
+				841B47F919DAB33F00A72CF2 /* controller */,
+			);
+			name = nfl;
+			sourceTree = "<group>";
+		};
+		841B47F919DAB33F00A72CF2 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				841B480119DABB8800A72CF2 /* details */,
+				841B480019DABB7100A72CF2 /* team */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		841B47FA19DAB35800A72CF2 /* bean */ = {
+			isa = PBXGroup;
+			children = (
+				841B47E519DA901400A72CF2 /* People.h */,
+				841B47E619DA901400A72CF2 /* People.m */,
+				841B47E819DA912B00A72CF2 /* Place.h */,
+				841B47E919DA912B00A72CF2 /* Place.m */,
+				841B47EB19DA960E00A72CF2 /* Player.h */,
+				841B47EC19DA960E00A72CF2 /* Player.m */,
+				841B47EE19DA9A1200A72CF2 /* Coach.h */,
+				841B47EF19DA9A1200A72CF2 /* Coach.m */,
+				841B47F119DA9CCE00A72CF2 /* Team.h */,
+				841B47F219DA9CCE00A72CF2 /* Team.m */,
+			);
+			name = bean;
+			sourceTree = "<group>";
+		};
+		841B480019DABB7100A72CF2 /* team */ = {
+			isa = PBXGroup;
+			children = (
+				84DF2D9519DAE54800F5BD92 /* ListTeamViewController.h */,
+				84DF2D9619DAE54800F5BD92 /* ListTeamViewController.m */,
+			);
+			name = team;
+			sourceTree = "<group>";
+		};
+		841B480119DABB8800A72CF2 /* details */ = {
+			isa = PBXGroup;
+			children = (
+				841B47FB19DAB9F200A72CF2 /* ListPlayerViewController.h */,
+				841B47FC19DAB9F200A72CF2 /* ListPlayerViewController.m */,
+				841B480219DABBBB00A72CF2 /* ListCoachViewController.h */,
+				841B480319DABBBB00A72CF2 /* ListCoachViewController.m */,
+				841B480419DABBBB00A72CF2 /* ListCoachViewController.xib */,
+				841B480719DABCF000A72CF2 /* DetailPlayerViewController.h */,
+				841B480819DABCF000A72CF2 /* DetailPlayerViewController.m */,
+				84D98A2119DC371F00B44B88 /* FilterPlayerViewController.h */,
+				84D98A2219DC371F00B44B88 /* FilterPlayerViewController.m */,
+				84D98A2319DC371F00B44B88 /* FilterPlayerViewController.xib */,
+			);
+			name = details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +356,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				841B47B019D94B9F00A72CF2 /* InfoPlist.strings in Resources */,
-				841B47B819D94B9F00A72CF2 /* Images.xcassets in Resources */,
+				841B480619DABBBB00A72CF2 /* ListCoachViewController.xib in Resources */,
+				84D98A2519DC371F00B44B88 /* FilterPlayerViewController.xib in Resources */,
+				84DF2D9B19DBFF6300F5BD92 /* Images.xcassets in Resources */,
+				84D98A2719DD3FA400B44B88 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +378,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841B47EA19DA912B00A72CF2 /* Place.m in Sources */,
 				841B47D619D9691000A72CF2 /* Batiment.m in Sources */,
 				841B47B619D94B9F00A72CF2 /* AppDelegate.m in Sources */,
 				841B47DD19D9958B00A72CF2 /* Maison.m in Sources */,
+				841B47F319DA9CCE00A72CF2 /* Team.m in Sources */,
+				84D98A2419DC371F00B44B88 /* FilterPlayerViewController.m in Sources */,
+				84DF2D9819DAE54800F5BD92 /* ListTeamViewController.m in Sources */,
+				841B47ED19DA960E00A72CF2 /* Player.m in Sources */,
+				841B480A19DABCF000A72CF2 /* DetailPlayerViewController.m in Sources */,
+				841B480519DABBBB00A72CF2 /* ListCoachViewController.m in Sources */,
 				841B47E319D9A8D300A72CF2 /* ParcImmobilier.m in Sources */,
+				841B47FE19DAB9F200A72CF2 /* ListPlayerViewController.m in Sources */,
 				841B47E019D9996F00A72CF2 /* Immeuble.m in Sources */,
 				841B47B219D94B9F00A72CF2 /* main.m in Sources */,
+				841B47F019DA9A1200A72CF2 /* Coach.m in Sources */,
 				841B47D919D981F000A72CF2 /* Adresse.m in Sources */,
+				841B47E719DA901400A72CF2 /* People.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
