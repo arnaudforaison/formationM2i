@@ -38,7 +38,7 @@
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return [Player getPostionWithIndex:row];
+    return [NFLUtil positionWithEnum:DL];
 }
 
 - (IBAction)filterPlayers:(id)sender {

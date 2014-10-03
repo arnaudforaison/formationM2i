@@ -2,23 +2,40 @@
 //  Team.h
 //  FormationM2i
 //
-//  Created by admin on 30/09/2014.
+//  Created by admin on 03/10/2014.
 //  Copyright (c) 2014 fr.proxiad.com. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "Player.h"
-#import "Coach.h"
+#import <CoreData/CoreData.h>
 
-@interface Team : NSObject
+@class Coach, Player;
 
-@property (nonatomic,strong,readonly) NSString* name;
-@property (nonatomic,strong) NSString* city;
-@property (nonatomic,strong) NSMutableArray* players;
-@property (nonatomic,strong) NSMutableArray* coachs;
+@interface Team : NSManagedObject
 
--(Team*)initWithName: (NSString*) nom AndCity: (NSString*) ville;
-- (void) addPlayer: (Player*) player;
-- (void) addCoach: (Coach*) coach;
+@property (nonatomic, retain) NSString * city;
+@property (nonatomic, retain) NSDate * creationDate;
+@property (nonatomic, retain) NSString * logoUrl;
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * primaryColorCode;
+@property (nonatomic, retain) NSString * secondaryColorCode;
+@property (nonatomic, retain) NSString * stadiumName;
+@property (nonatomic, retain) NSString * yearLastSuperBowl;
+@property (nonatomic, retain) NSNumber * idTeam;
+@property (nonatomic, retain) NSSet *coaches;
+@property (nonatomic, retain) NSSet *players;
+@end
+
+@interface Team (CoreDataGeneratedAccessors)
+
+- (void)addCoachesObject:(Coach *)value;
+- (void)removeCoachesObject:(Coach *)value;
+- (void)addCoaches:(NSSet *)values;
+- (void)removeCoaches:(NSSet *)values;
+
+- (void)addPlayersObject:(Player *)value;
+- (void)removePlayersObject:(Player *)value;
+- (void)addPlayers:(NSSet *)values;
+- (void)removePlayers:(NSSet *)values;
 
 @end

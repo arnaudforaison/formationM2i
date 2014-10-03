@@ -1,18 +1,17 @@
 //
-//  Coach.m
+//  TeamService.h
 //  FormationM2i
 //
 //  Created by admin on 03/10/2014.
 //  Copyright (c) 2014 fr.proxiad.com. All rights reserved.
 //
 
-#import "Coach.h"
+#import <Foundation/Foundation.h>
 #import "Team.h"
+#import "CommonService.h"
 
+@interface TeamService : CommonService
 
-@implementation Coach
-
-@dynamic dateBegin;
-@dynamic team;
+- (NSMutableArray*) loadTeams;
 
 @end

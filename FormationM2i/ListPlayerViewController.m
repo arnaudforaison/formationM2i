@@ -27,14 +27,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell* cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"cellPlayer"];
     if(cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellPlayer"];
+        cell = [[UITableViewCell alloc] initWithStyle:3 reuseIdentifier:@"cellPlayer"];
     }
     
     Player* player = (Player*)[playersFiltered objectAtIndex:indexPath.row];
-    NSString* labelPlayer = [[NSString alloc] initWithFormat:@"%@ %@",player.name,player.lastName];
+    NSString* labelPlayer = [[NSString alloc] initWithFormat:@"%@ %@",player.firstName,player.lastName];
     cell.textLabel.text = labelPlayer;
-    cell.detailTextLabel.text = [[NSString alloc] initWithFormat:@"%@",[Player getPostionWithPosition:player.position]];
-    NSLog(@"%@ %@",player.name,player.lastName);
+    cell.detailTextLabel.text = [[NSString alloc] initWithFormat:@"%@",[NFLUtil positionWithEnum:[player.position intValue]]];
+    NSLog(@"%@ %@",player.firstName,player.lastName);
     
     return cell;
 }
@@ -89,7 +89,7 @@
 }
 
 - (void)validateFilter:(enum positionEnum)position {
-    NSLog(@"%@",[Player getPostionWithPosition:position]);
+    NSLog(@"%@",[NFLUtil positionWithEnum:position]);
     
     positionFiltered = position;
     
@@ -98,7 +98,7 @@
     } else {
         playersFiltered = [NSMutableArray new];
         for (Player* p in playersTeam) {
-            if(p.position == position){
+            if([p.position intValue] == position){
                 [playersFiltered addObject:p];
             }
         }

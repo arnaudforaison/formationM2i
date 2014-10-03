@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.5" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Coach" representedClassName="Coach" parentEntity="People" syncable="YES">
+        <attribute name="dateBegin" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="team" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="coaches" inverseEntity="Team" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="People" representedClassName="People" syncable="YES">
+        <attribute name="birthday" attributeType="Date" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" attributeType="String" syncable="YES"/>
+        <attribute name="idPeople" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES" isSyncIdentityProperty="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="lastName" attributeType="String" syncable="YES"/>
+        <attribute name="pictureProfile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="squad" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" parentEntity="People" syncable="YES">
+        <attribute name="position" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="university" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="team" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="players" inverseEntity="Team" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="Team" representedClassName="Team" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="idTeam" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="logoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primaryColorCode" attributeType="String" syncable="YES"/>
+        <attribute name="secondaryColorCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stadiumName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yearLastSuperBowl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="coaches" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Coach" inverseName="team" inverseEntity="Coach" indexed="YES" syncable="YES"/>
+        <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="team" inverseEntity="Player" indexed="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Coach" positionX="108" positionY="36" width="128" height="73"/>
+        <element name="People" positionX="268" positionY="-216" width="128" height="178"/>
+        <element name="Player" positionX="441" positionY="150" width="128" height="118"/>
+        <element name="Team" positionX="259" positionY="252" width="128" height="208"/>
+    </elements>
+</model>

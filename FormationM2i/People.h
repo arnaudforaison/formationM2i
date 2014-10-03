@@ -1,26 +1,25 @@
 //
-//  Personne.h
+//  People.h
 //  FormationM2i
 //
-//  Created by admin on 30/09/2014.
+//  Created by admin on 03/10/2014.
 //  Copyright (c) 2014 fr.proxiad.com. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "Place.h"
+#import <CoreData/CoreData.h>
 
-@interface People : NSObject
 
-enum squadEnum {Offense,Defense,SpecialTeam};
+@interface People : NSManagedObject
 
-@property (nonatomic,strong) NSString* lastName;
-@property (nonatomic,strong) NSString* name;
-@property (nonatomic,strong) NSDate* birthday;
-@property (nonatomic,strong) Place* place;
-@property (nonatomic) enum squadEnum squad;
-@property (nonatomic,strong) NSString* urlProfilePic;
-
-- (People*) initWithLastName: (NSString*) nom AndName: (NSString*) prenom AndBirthday: (NSString*) dateNaissance AndSquad: (enum squadEnum) equipe AndPicProfile:(NSString*) urlImage;
-- (People*) initWithLastName: (NSString*) nom AndName: (NSString*) prenom AndBirthday: (NSString*) dateNaissance AndSquad: (enum squadEnum) equipe AndPicProfile:(NSString*) urlImage AndBirthCity: (NSString*) ville AndBirthState: (NSString*) etat AndBirthCountry: (NSString*) pays;
+@property (nonatomic, retain) NSDate * birthday;
+@property (nonatomic, retain) NSString * city;
+@property (nonatomic, retain) NSString * country;
+@property (nonatomic, retain) NSString * firstName;
+@property (nonatomic, retain) NSNumber * idPeople;
+@property (nonatomic, retain) NSString * lastName;
+@property (nonatomic, retain) NSString * pictureProfile;
+@property (nonatomic, retain) NSNumber * squad;
+@property (nonatomic, retain) NSString * state;
 
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Team.h"
 #import "ListPlayerViewController.h"
-#import "Player.h"
+#import "TeamService.h"
 
 @interface ListTeamViewController : UIViewController {
     NSMutableArray* filteredTeams;
