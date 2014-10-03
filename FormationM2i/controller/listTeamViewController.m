@@ -23,6 +23,7 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
+        service = [[TeamService alloc] init];
         teamsNFL = [service loadTeams];
         filteredTeams = [[NSMutableArray alloc] initWithArray:teamsNFL];
     }
