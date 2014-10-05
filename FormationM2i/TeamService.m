@@ -25,8 +25,8 @@
 }
 
 - (NSMutableArray*) loadTeams {
-    AppDelegate* appDelegate = [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext* context = appDelegate.managedObjectContext;
+    AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext* context = [appDelegate managedObjectContext];
 
     if ([teamsNFL count] == 0) {
         NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"Team"];
