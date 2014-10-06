@@ -10,14 +10,18 @@
 
 @implementation PlayerService
 
-- (NSMutableArray*) getPlayersFromTeamId:(int) teamId {
-    return [self listPlayersNFL];
+- (NSMutableArray*) playersFromTeamId:(NSNumber*) teamId {
+    
+    if ([teamId intValue] == 0) {
+        return [self listPlayersNFL:teamId];
+    }
+    return nil;
 }
 
-- (NSMutableArray*) listPlayersNFL {
+- (NSMutableArray*) listPlayersNFL:(NSNumber*) teamId{
     NSMutableArray* players = [NSMutableArray new];
     
-    Player* boldin = [Player new];
+    Player* boldin = [NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:super.context];
     boldin.weight = [NSNumber numberWithInt:98];
     boldin.size = [NSNumber numberWithInt:185];
     boldin.university = @"Seminoles Florida State";
@@ -31,7 +35,7 @@
     boldin.pictureProfile = @"http://static.nfl.com/static/content/public/static/img/fantasy/transparent/200x200/BOL283010.png";
     boldin.position = [NSNumber numberWithInt:WR];
     
-    Player* kaepernick = [Player new];
+    Player* kaepernick = [NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:super.context];
     kaepernick.weight = [NSNumber numberWithInt:104];
     kaepernick.size = [NSNumber numberWithInt:194];
     kaepernick.university = @"Wolf Pack Nevada";
@@ -45,7 +49,7 @@
     kaepernick.pictureProfile = @"http://static.nfl.com/static/content/public/static/img/fantasy/transparent/200x200/KAE371576.png";
     kaepernick.position = [NSNumber numberWithInt:QB];
     
-    Player* smith = [Player new];
+    Player* smith = [NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:super.context];
     smith.weight = [NSNumber numberWithInt:129];
     smith.size = [NSNumber numberWithInt:193];
     smith.university = @"Tigers Missouri";
@@ -64,6 +68,9 @@
     [players addObject:kaepernick];
     [players addObject:boldin];
     [players addObject:smith];
+    
+    NSError* error = nil;
+    [super.context save:&error];
     
     return players;
 }

@@ -9,12 +9,12 @@
 #import "CommonService.h"
 
 @implementation CommonService
-//@synthesize context;
+@synthesize context;
 
 - (id)init {
     if(self = [super init]){
-//        AppDelegate* appDelegate = [[UIApplication sharedApplication] delegate];
-//        context = appDelegate.managedObjectContext;
+        AppDelegate* appDelegate = [[UIApplication sharedApplication] delegate];
+        context = appDelegate.managedObjectContext;
     }
     return self;
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.5" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13F34" minimumToolsVersion="Xcode 4.5" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Coach" representedClassName="Coach" parentEntity="People" syncable="YES">
         <attribute name="dateBegin" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="team" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="coaches" inverseEntity="Team" indexed="YES" syncable="YES"/>

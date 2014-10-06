@@ -25,13 +25,11 @@
 }
 
 - (NSMutableArray*) loadTeams {
-    AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext* context = [appDelegate managedObjectContext];
 
     if ([teamsNFL count] == 0) {
         NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"Team"];
         NSError* error = nil;
-        NSArray* results = [context executeFetchRequest:request error:&error];
+        NSArray* results = [super.context executeFetchRequest:request error:&error];
         if ([results count] == 0) {
             [self initNFL];
         }
@@ -40,138 +38,49 @@
     return teamsNFL;
 }
 
-- (void) initNFL {
-    
-    Team* team = [Team alloc];
-    team.name = @"49ers";
-    team.city = @"San Francisco";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Seahawk";
-    team.city = @"Seattle";
-    [teamsNFL addObject: team];
-    
-    
-    team.name = @"Broncos";
-    team.city = @"Denver";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Panthers";
-    team.city = @"Carolina";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Ravens";
-    team.city = @"Baltimore";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Jaguars";
-    team.city = @"Jacksonville";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Saints";
-    team.city = @"New Orleans";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Rams";
-    team.city = @"Saint Louis";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Bears";
-    team.city = @"Chicago";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Patriots";
-    team.city = @"New England";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Redskins";
-    team.city = @"Washington";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Vikings";
-    team.city = @"Minnesota";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Colts";
-    team.city = @"Indianapolis";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Cardinals";
-    team.city = @"Arizona";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Falcons";
-    team.city = @"Atlanta";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Bills";
-    team.city = @"Buffalo";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Bengals";
-    team.city = @"Cincinnati";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Browns";
-    team.city = @"Cleveland";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Lions";
-    team.city = @"Detroit";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Packers";
-    team.city = @"Green Bay";
-    [teamsNFL addObject: team];
-
-    team.name = @"Texans";
-    team.city = @"Houston";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Chiefs";
-    team.city = @"Kansas City";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Giants";
-    team.city = @"New York";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Jets";
-    team.city = @"New York";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Raiders";
-    team.city = @"Oakland";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Eagles";
-    team.city = @"Philadelphia";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Steelers";
-    team.city = @"Pittsburg";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Chargers";
-    team.city = @"San Diego";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Buccaneers";
-    team.city = @"Tempa Bay";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Titans";
-    team.city = @"Tennessee";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Cowboys";
-    team.city = @"Dallas";
-    [teamsNFL addObject: team];
-    
-    team.name = @"Dolphins";
-    team.city = @"Miami";
+- (void) addTeamWithName:(NSString*) name AndCity:(NSString*) city {
+    Team* team = [NSEntityDescription insertNewObjectForEntityForName:@"Team" inManagedObjectContext:super.context];
+    team.name = name;
+    team.city = city;
     [teamsNFL addObject: team];
 }
 
+- (void) initNFL {
+    
+    [self addTeamWithName:@"49ers" AndCity:@"San Francisco"];
+    [self addTeamWithName:@"Seahawk" AndCity:@"Seattle"];
+    [self addTeamWithName:@"Broncos" AndCity:@"Denver"];
+    [self addTeamWithName:@"Panthers" AndCity:@"Carolina"];
+    [self addTeamWithName:@"Ravens" AndCity:@"Baltimore"];
+    [self addTeamWithName:@"Jaguars" AndCity:@"Jacksonville"];
+    [self addTeamWithName:@"Saints" AndCity:@"New Orleans"];
+    [self addTeamWithName:@"Rams" AndCity:@"Saint Louis"];
+    [self addTeamWithName:@"Bears" AndCity:@"Chicago"];
+    [self addTeamWithName:@"Patriots" AndCity:@"New England"];
+    [self addTeamWithName:@"Redskins" AndCity:@"Washington"];
+    [self addTeamWithName:@"Vikings" AndCity:@"Minnesota"];
+    [self addTeamWithName:@"Colts" AndCity:@"Indianapolis"];
+    [self addTeamWithName:@"Cardinals" AndCity:@"Arizona"];
+    [self addTeamWithName:@"Falcons" AndCity:@"Atlanta"];
+    [self addTeamWithName:@"Bills" AndCity:@"Buffalo"];
+    [self addTeamWithName:@"Bengals" AndCity:@"Cincinnati"];
+    [self addTeamWithName:@"Browns" AndCity:@"Cleveland"];
+    [self addTeamWithName:@"Lions" AndCity:@"Detroit"];
+    [self addTeamWithName:@"Packers" AndCity:@"Green Bay"];
+    [self addTeamWithName:@"Texans" AndCity:@"Houston"];
+    [self addTeamWithName:@"Chiefs" AndCity:@"Kansas City"];
+    [self addTeamWithName:@"Giants" AndCity:@"New York"];
+    [self addTeamWithName:@"Jets" AndCity:@"New York"];
+    [self addTeamWithName:@"Raiders" AndCity:@"Oakland"];
+    [self addTeamWithName:@"Steelers" AndCity:@"Pittsburg"];
+    [self addTeamWithName:@"Chargers" AndCity:@"San Diego"];
+    [self addTeamWithName:@"Buccaneers" AndCity:@"Tempa Bay"];
+    [self addTeamWithName:@"Titans" AndCity:@"Tennessee"];
+    [self addTeamWithName:@"Cowboys" AndCity:@"Dallas"];
+    [self addTeamWithName:@"Dolphins" AndCity:@"Miami"];
+    
+    NSError* error = nil;
+    [super.context save:&error];
+}
 
 @end

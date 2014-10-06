@@ -19,6 +19,4 @@
 
 @property (strong, nonatomic) NSMutableArray* playersTeam;
 
-- (void) initListPlayers;
-
 @end

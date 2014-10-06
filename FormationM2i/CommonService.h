@@ -10,6 +10,6 @@
 #import "AppDelegate.h"
 
 @interface CommonService : NSObject
-//@property (nonatomic,strong) NSManagedObjectContext* context;
+@property (nonatomic,strong) NSManagedObjectContext* context;
 
 @end

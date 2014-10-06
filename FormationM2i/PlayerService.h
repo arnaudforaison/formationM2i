@@ -12,6 +12,6 @@
 
 @interface PlayerService : CommonService
 
-- (NSMutableArray*) getPlayersFromTeamId:(int) teamId;
+- (NSMutableArray*) playersFromTeamId:(NSNumber*) teamId;
 
 @end

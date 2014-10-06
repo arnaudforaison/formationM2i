@@ -29,8 +29,7 @@
 		84D98A2419DC371F00B44B88 /* FilterPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D98A2219DC371F00B44B88 /* FilterPlayerViewController.m */; };
 		84D98A2519DC371F00B44B88 /* FilterPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D98A2319DC371F00B44B88 /* FilterPlayerViewController.xib */; };
 		84D98A2719DD3FA400B44B88 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D98A2619DD3FA400B44B88 /* MainStoryboard.storyboard */; };
-		84D98AB419DD76EC00B44B88 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D98AB319DD76EC00B44B88 /* CoreData.framework */; };
-		84D98AB919DE8AA100B44B88 /* NFLDataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 84D98AB819DE8AA100B44B88 /* NFLDataModel.xcdatamodel */; };
+		84D98AB419DD76EC00B44B88 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D98AB319DD76EC00B44B88 /* CoreData.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		84D98ABE19DE99EC00B44B88 /* FormaterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D98ABD19DE99EC00B44B88 /* FormaterUtil.m */; };
 		84D98AC119DE9E8A00B44B88 /* TeamService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D98AC019DE9E8A00B44B88 /* TeamService.m */; };
 		84D98AC419DEA01E00B44B88 /* PlayerService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D98AC319DEA01E00B44B88 /* PlayerService.m */; };
@@ -38,6 +37,7 @@
 		84D98AE819DEC69B00B44B88 /* NFLUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D98AE719DEC69B00B44B88 /* NFLUtil.m */; };
 		84DF2D9819DAE54800F5BD92 /* ListTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DF2D9619DAE54800F5BD92 /* ListTeamViewController.m */; };
 		84DF2D9B19DBFF6300F5BD92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DF2D9A19DBFF6300F5BD92 /* Images.xcassets */; };
+		A2F8657D19E0C8A300D7606D /* NFLDataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = A2F8657719E0C55A00D7606D /* NFLDataModel.xcdatamodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +88,6 @@
 		84D98A2319DC371F00B44B88 /* FilterPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterPlayerViewController.xib; sourceTree = "<group>"; };
 		84D98A2619DD3FA400B44B88 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
 		84D98AB319DD76EC00B44B88 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		84D98AB819DE8AA100B44B88 /* NFLDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NFLDataModel.xcdatamodel; sourceTree = "<group>"; };
 		84D98ABC19DE99EC00B44B88 /* FormaterUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormaterUtil.h; sourceTree = "<group>"; };
 		84D98ABD19DE99EC00B44B88 /* FormaterUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormaterUtil.m; sourceTree = "<group>"; };
 		84D98ABF19DE9E8A00B44B88 /* TeamService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamService.h; sourceTree = "<group>"; };
@@ -112,6 +111,7 @@
 		84DF2D9519DAE54800F5BD92 /* ListTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListTeamViewController.h; path = controller/ListTeamViewController.h; sourceTree = "<group>"; };
 		84DF2D9619DAE54800F5BD92 /* ListTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListTeamViewController.m; path = controller/ListTeamViewController.m; sourceTree = "<group>"; };
 		84DF2D9A19DBFF6300F5BD92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A2F8657719E0C55A00D7606D /* NFLDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NFLDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				841B47E419DA8FE700A72CF2 /* nfl */,
-				84D98AB819DE8AA100B44B88 /* NFLDataModel.xcdatamodel */,
+				A2F8657719E0C55A00D7606D /* NFLDataModel.xcdatamodel */,
 				84D98A2619DD3FA400B44B88 /* MainStoryboard.storyboard */,
 				84DF2D9A19DBFF6300F5BD92 /* Images.xcassets */,
 				841B47B419D94B9F00A72CF2 /* AppDelegate.h */,
@@ -418,7 +418,6 @@
 			files = (
 				8465C53219DEEF3300F78CC5 /* Coach.m in Sources */,
 				841B47B619D94B9F00A72CF2 /* AppDelegate.m in Sources */,
-				84D98AB919DE8AA100B44B88 /* NFLDataModel.xcdatamodel in Sources */,
 				84D98A2419DC371F00B44B88 /* FilterPlayerViewController.m in Sources */,
 				84DF2D9819DAE54800F5BD92 /* ListTeamViewController.m in Sources */,
 				8465C53119DEEF3000F78CC5 /* Player.m in Sources */,
@@ -428,6 +427,7 @@
 				841B480519DABBBB00A72CF2 /* ListCoachViewController.m in Sources */,
 				8465C53319DEEF3600F78CC5 /* Team.m in Sources */,
 				84D98ABE19DE99EC00B44B88 /* FormaterUtil.m in Sources */,
+				A2F8657D19E0C8A300D7606D /* NFLDataModel.xcdatamodel in Sources */,
 				84D98AC119DE9E8A00B44B88 /* TeamService.m in Sources */,
 				8465C53019DEEF2E00F78CC5 /* People.m in Sources */,
 				841B47FE19DAB9F200A72CF2 /* ListPlayerViewController.m in Sources */,

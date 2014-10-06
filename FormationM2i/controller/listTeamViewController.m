@@ -11,21 +11,21 @@
 @interface ListTeamViewController () <UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
 
 @property (nonatomic,strong) NSMutableArray* teamsNFL;
-@property (nonatomic,strong) TeamService* service;
+@property (nonatomic,strong) TeamService* teamService;
+@property (nonatomic,strong) PlayerService* playerService;
 
 @property (nonatomic, strong) IBOutlet UITableView *mTableView;
 
 @end
 
 @implementation ListTeamViewController
-@synthesize teamsNFL,service;
+@synthesize teamsNFL,teamService,playerService;
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        service = [[TeamService alloc] init];
-        teamsNFL = [service loadTeams];
-        filteredTeams = [[NSMutableArray alloc] initWithArray:teamsNFL];
+        teamService = [TeamService new];
+        playerService = [PlayerService new];
     }
     return self;
 }
@@ -69,9 +69,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell* cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"cell"];
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"teamCell"];
     if(cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"teamCell"];
     }
     
     Team* team = [filteredTeams objectAtIndex:indexPath.row];
@@ -93,6 +93,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    teamsNFL = [teamService loadTeams];
+    filteredTeams = [[NSMutableArray alloc] initWithArray:teamsNFL];
 }
 
 - (void)didReceiveMemoryWarning
@@ -106,9 +108,10 @@
     tabBarController.navigationItem.title = [[NSString alloc] initWithFormat:@"%@ %@",teamSelected.city,teamSelected.name];
     UINavigationController *navigationController = [[tabBarController viewControllers] objectAtIndex:0];
     ListPlayerViewController* listPlayerViewController = [[navigationController viewControllers] objectAtIndex:0];
-    NSLog(@"Nom de l'equipe : %@ et nb joueurs : %d",teamSelected.name,[teamSelected.players count]);
-    [listPlayerViewController.playersTeam addObjectsFromArray: [teamSelected.players allObjects]];
-    [listPlayerViewController initListPlayers];
+    NSMutableArray* playersBySelectedTeam = [playerService playersFromTeamId:teamSelected.idTeam];
+    if(playersBySelectedTeam != nil && [playersBySelectedTeam count] > 0){
+        listPlayerViewController.playersTeam = playersBySelectedTeam;
+    }
 }
 
 @end
